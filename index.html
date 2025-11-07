@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Hanan — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand"><h1>Hanan Haider Kiani</h1><div class="subtitle">Interactive Personal Dashboard</div></div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+    <div class="controls">
+      
+    </div>
+  </div>
+</header>
+<main class="container main-grid">
+  <section>
+    <div class="profile-card fade-in">
+      <div style="display:flex;gap:18px;align-items:center">
+        <img src="assets/profile.jpg" class="profile-pic" alt="profile">
+        <div>
+          <h2 style="margin:0">Hanan Haider Kiani</h2>
+          <div class="lead">Sixth — Semester student — Web & AI projects</div>
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <p>Welcome. This dashboard demonstrates my assignment: multi-page interactive dashboard with responsive layout, animations and dynamic behaviour.</p>
+        <div style="margin-top:12px"><a class="btn-primary" href="projects.html">View Projects</a></div>
+      </div>
+    </div>
+    <div class="content">
+      <h3 style="margin:0 0 8px 0">Contact</h3>
+      <div class="contact-card">
+        <h3>Get in touch</h3>
+        <form id="contact-form" novalidate>
+          <label>Name<input id="name" required></label>
+          <label>Email<input id="email" type="email" required></label>
+          <label>Message<textarea id="message" rows="4" required></textarea></label>
+          <div class="form-actions"><button class="btn-primary" type="submit">Send</button><div class="error" id="form-error"></div></div>
+          <div style="margin-top:12px" class="mini-clock"><div id="digital-clock">--:--:--</div><div id="session-timer">Viewed: 00:00:00</div></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <aside>
+    <div class="profile-card fade-in">
+      <h4 style="margin:0">Quick Info</h4>
+      <ul style="margin-top:12px;color:var(--muted)">
+        <li>Location: Lahore - Pakistan</li>
+        <li>Role: Student / Developer</li>
+        <li>Contact: 70143314@student.uol.edu.pk</li>
+      </ul>
+   
+    </div>
+  </aside>
+</main>
+<footer class="site-footer container"><div>© 2025 Hanan — Interactive Dashboard</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

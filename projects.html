@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects - Hanan Haider Kiani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><h1>Hanan's Dashboard</h1><div class="subtitle">Projects</div></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+      </nav>
+     
+    </div>
+  </header>
+
+  <main class="container content">
+    <section class="card fade-in">
+      <h1>Projects</h1>
+      <p>Use the filter to show projects by technology.</p>
+
+      <div class="filter-bar">
+        <label>Filter:
+          <select id="tech-filter">
+            <option value="all">All</option>
+            <option value="web">Web</option>
+            <option value="mobile">Mobile</option>
+            <option value="ai">AI</option>
+            <option value="iot">IoT</option>
+          </select>
+        </label>
+        <button id="sort-btn" class="btn-ghost">Sort by Title</button>
+      </div>
+
+      <div id="projects-list" class="projects-grid">
+        <article class="project-card" data-tech="web">
+          <h2>Final Year Project: Event Decoration & Vendor Marketplace</h2>
+          <p><strong>Short description:</strong> A platform for AI-based decoration theme generation and vendor management with budget tracking and AR previews.</p>
+          <p><strong>Technologies used:</strong> HTML, CSS, JS, Node.js, Firebase, AI APIs</p>
+          <p><strong>Problem Statement:</strong> Event planners face difficulty finding reliable and affordable vendors with creative theme previews.</p>
+          <p><strong>Unique Proposition:</strong> AI Theme Recommender, vendor rating-based matching, and AR previews.</p>
+          <p><strong>Competitor Info:</strong> Other apps are generic or costly; this project targets campus-level events.</p>
+          <p><strong>Link:</strong> <a href="#" target="_blank">Demo / Repo</a></p>
+        </article>
+
+        <article class="project-card" data-tech="ai">
+          <h2>AI-Powered Adaptive Rehabilitation System</h2>
+          <p><strong>Short description:</strong> IoT + ML system using pose estimation to adjust physical therapy exercises in real-time.</p>
+          <p><strong>Technologies used:</strong> Python, OpenCV, TensorFlow</p>
+          <p><strong>Problem Statement:</strong> Rehabilitation lacks personalization and instant feedback.</p>
+          <p><strong>Unique Proposition:</strong> Real-time pose correction and adaptive difficulty.</p>
+          <p><strong>Competitor Info:</strong> Existing systems are high-cost; this focuses on low-cost educational use.</p>
+          <p><strong>Link:</strong> <a href="#" target="_blank">Demo / Repo</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <small>© 2025 Hanan — Projects</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
